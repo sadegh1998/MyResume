@@ -12,7 +12,7 @@ To view my resume, you can either download the PDF file or view it online using 
 
 **Contact**
 
-If you have any questions or feedback, please feel free to contact me at [your email address].
+If you have any questions or feedback, please feel free to contact me at sadegh.mazaheri1377@gmail.com.
 
 **Additional information**
 
