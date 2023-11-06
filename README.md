@@ -29,4 +29,3 @@ I made the following changes:
 * I added a contact section, and I made it more clear that you are open to new opportunities.
 * I added a more formal closing.
 
-I hope this is helpful!
