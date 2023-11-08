@@ -1,6 +1,6 @@
-namespace MvcResume.Models
+namespace MvcResume.Models.Old
 {
-      public class Testimonials
+    public class Testimonials
     {
         public long ID { get; set; }
         public string Image { get; set; }
