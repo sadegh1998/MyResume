@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MvcResume.Models.Testimonial>
+
+
+@foreach (var item in Model)
+{
+    <div class="testimonial">
+        <div class="img">
+            <img src="img/testimonials/@item.Image" alt="@item.Name">
+        </div>
+        <div class="text">
+            <p>@item.Description</p>
+        </div>
+
+        <div class="author-info">
+            <h4 class="author">@item.Name</h4>
+            <h5 class="company">@item.ProjectName</h5>
+            <div class="icon">
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+    </div>
+}
