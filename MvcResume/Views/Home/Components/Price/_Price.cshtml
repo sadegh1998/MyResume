@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MvcResume.Models.Pricing>
+
+    @foreach (var item in Model)
+{
+    <div class="fw-package-wrap col-md-6 ">
+        <div class="fw-package">
+            <div class="fw-heading-row">
+                <span>@item.PlanName</span>
+            </div>
+
+            <div class="fw-pricing-row">
+                <span>$@item.Price</span>
+                <small>@item.Period</small>
+            </div>
+
+            <div class="fw-button-row">
+                <a href="@item.Link" target="_self" class="btn btn-secondary">Free Trial</a>
+            </div>
+
+            <div class="fw-default-row">@item.Description</div>
+            @*<div class="fw-default-row">Pellentesque scelerisque</div>
+            <div class="fw-default-row">Morbi eu sagittis</div>*@
+        </div>
+    </div>
+}
