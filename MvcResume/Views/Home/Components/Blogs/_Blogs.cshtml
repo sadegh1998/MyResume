@@ -16,7 +16,7 @@
                             <div class="blog-card">
                                 <div class="media-block">
                                     <div class="category">
-                                        <a href="#" title="View all posts in Design">@item.Title</a>
+                                        <a href="#" title="View all posts in Design">@item.Category</a>
                                     </div>
                                     <a href="blog-post-1.html">
                                         <img src="img/blog/@item.Image" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
@@ -24,9 +24,9 @@
                                     </a>
                                 </div>
                                 <div class="post-info">
-                                    <div class="post-date">05 Mar 2020</div>
+                                    <div class="post-date">@item.CreateDate</div>
                                     <a href="blog-post-1.html">
-                                        <h4 class="blog-item-title">@item.Title</h4>
+                                        <h4 class="blog-item-title">@item.ShortDescription</h4>
                                     </a>
                                 </div>
                             </div>

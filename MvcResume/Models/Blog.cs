@@ -16,4 +16,7 @@ public partial class Blog
     public string? Author { get; set; }
 
     public string? Tag { get; set; }
+    public DateTime CreateDate { get; set; }
+    public string ShortDescription { get; set; }
+    public string Category { get; set; }
 }
