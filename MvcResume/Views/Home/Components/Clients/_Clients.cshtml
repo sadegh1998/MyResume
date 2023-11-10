@@ -1,0 +1,11 @@
+﻿@model IEnumerable<MvcResume.Models.Client>
+
+
+    @foreach (var item in Model)
+{
+    <div class="client-block">
+        <a href="@item.Url" target="_blank" title="@item.ClientName">
+            <img src="img/clients/@item.Image" alt="Logo">
+        </a>
+    </div>
+}
