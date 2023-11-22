@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Experience>
+
+    @foreach (var item in Model)
+{
+    <div class="timeline timeline-second-style clearfix">
+        <div class="timeline-item clearfix">
+            <div class="left-part">
+                <h5 class="item-period">@item.FromDate - @item.ToDate == null ? "" : @item.ToDate</h5>
+                <span class="item-company">@item.Company</span>
+            </div>
+            <div class="divider"></div>
+            <div class="right-part">
+                <h4 class="item-title">@item.JobTitle</h4>
+                <p>@item.Description</p>
+            </div>
+        </div>
+
+        
+    </div>
+}
+
