@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Education>
+
+<div class="timeline timeline-second-style clearfix">
+    @foreach (var item in Model)
+    {
+        <div class="timeline-item clearfix">
+            <div class="left-part">
+                <h5 class="item-period">@item.GraduationDate</h5>
+                <span class="item-company">@item.UniversityName</span>
+            </div>
+            <div class="divider"></div>
+            <div class="right-part">
+                <h4 class="item-title">@item.FieldOfStudy</h4>
+                <p>@item.FieldOfStudy</p>
+            </div>
+        </div>
+    }
+    
+</div>
