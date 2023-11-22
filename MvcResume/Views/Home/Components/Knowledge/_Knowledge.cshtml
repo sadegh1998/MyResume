@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Knowledge>
+
+<div class="block-title">
+    <h3>Knowledges</h3>
+</div>
+
+<ul class="knowledges">
+    @foreach (var item in Model)
+    {
+        <li>@item.Title</li>
+
+    }
+</ul>
