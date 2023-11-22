@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Skill>
+
+<div class="col-xs-12 col-sm-5">
+    <!-- Design Skills -->
+    <div class="block-title">
+        <h3>Design <span>Skills</span></h3>
+    </div>
+    @foreach (var item in Model.Where(c=>c.Type == 1))
+    {
+        <div class="skills-info skills-second-style">
+            <!-- Skill  -->
+            <div class="skill clearfix">
+                <h4>@item.Title</h4>
+                <div class="skill-value">@item.Percentage%</div>
+            </div>
+            <div class="skill-container skill-1">
+                <div class="skill-percentage"></div>
+            </div>
+            <!-- End of Skill  -->
+            
+
+        </div>
+    }
+
+    <!-- End of Design Skills -->
+
+    <div class="white-space-10"></div>
+
+    <!-- Coding Skills -->
+    <div class="block-title">
+        <h3>Coding <span>Skills</span></h3>
+    </div>
+    @foreach (var item in Model.Where(c=>c.Type == 2))
+    {
+        <div class="skills-info skills-second-style">
+            <!-- Skill  -->
+            <div class="skill clearfix">
+                <h4>@item.Title</h4>
+                <div class="skill-value">@item.Percentage%</div>
+            </div>
+            <div class="skill-container skill-5">
+                <div class="skill-percentage"></div>
+            </div>
+            <!-- End of Skill  -->
+            
+        </div>
+    }
+    
+    <!-- End of Coding Skills -->
+
+    <div class="white-space-10"></div>
+
+    <!-- Knowledges -->
+    @await Component.InvokeAsync("Knowledge")
+    <!-- End of Knowledges -->
+</div>
