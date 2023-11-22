@@ -9,5 +9,6 @@ namespace MvcResume.ViewComponents
         {            
             return View("_Resume");
         }
+     
     }
 }
